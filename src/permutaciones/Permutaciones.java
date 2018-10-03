@@ -72,11 +72,12 @@ public class Permutaciones {
 		case 1:
                     int n;
                     String[] words; 
-                    System.out.print("Introduzca la cantidad de palabra ha ingresar: ");
-                    n = sc.nextInt();
+                    sc.nextLine(); 
+                    System.out.println ("Introduzca la cantidad de palabra ha ingresar: ");
+                    n = Integer.parseInt( sc.nextLine());
                     words = new String[n];
-                    for(int i = 0; i < n; i++){
-                        System.out.print("Introduzca una palabra: ");
+                    for(int i = 0; i < n; i++){                 
+                        System.out.println("Introduzca una palabra: ");
                         words[i] = sc.nextLine();
                     }
                     Permutaciones ob = new Permutaciones(words);
